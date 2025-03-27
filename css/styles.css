@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url('https://hackernoon.com/fonts/IBM/IBM-Plex-Mono/fonts/complete/woff2/IBMPlexMono-Regular.woff2');
+}
+
+/* Reset completo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    height: 100%;
+    overflow: hidden; /* Previene doble scroll */
+    position: relative;
+}
+
+/* Fondo animado (posición fija) */
+#vanta-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Contenedor de contenido con scroll */
+.content-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-item a:hover {
+    color: rgb(209, 27, 118);
+    background-color: rgb(245, 245, 220);
+}
+
+/* Sección Hero */
+#hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    font-size: clamp(24px, 4vw, 36px);
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.cutecat {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Sección de Proyectos */
+.projects-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(30, 30, 46, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: rgba(20, 20, 36, 0.8);
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #d9b3ff;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(138, 43, 226, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.project-link:hover {
+    background-color: rgba(138, 43, 226, 1);
+}
+.project-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.project-link:hover::before {
+    left: 100%;
+}
+/* Detalles de proyectos */
+.project-details {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(30, 30, 46, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d9b3ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cutecat {
+        width: 300px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #hero {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cutecat {
+        width: 200px;
+    }
+    
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card {
+        padding: 15px;
+    }
+    
+    #hero {
+        font-size: 20px;
+    }
+}

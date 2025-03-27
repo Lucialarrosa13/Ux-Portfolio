@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="description" content="Portfolio de Lucía Larrosa - UX Designer especializada en crear experiencias digitales memorables">
+<title>Lucía Larrosa - UX Designer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo separado del contenido -->
+    <div id="vanta-background"></div>
+    
+    <!-- Contenido principal con scroll independiente -->
+    <div class="content-wrapper">
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="https://github.com/Lucialarrosa13" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li class="nav-item"><a href="#projects">My UX Projects</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/luc%C3%ADalarrosa/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li class="nav-item"><a href="mailto:riotlucia@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="hero-section">
+                <div id="hero"></div>
+                <img src="img/cutecat.gif" class="cutecat" alt="Animación de gato">
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2>My UX Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="img/sushi-app.jpg" alt="Sushi App">
+                        <h3>Sushi Ordering App</h3>
+                        <p>This project focuses on creating an intuitive mobile and web experience for ordering sushi.</p>
+                        <a href="#sushi-details" class="project-link">View Details</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="img/design-process.jpg" alt="Design Process">
+                        <h3>Design Process</h3>
+                        <p>Check out my UX design methodology from research to high-fidelity prototypes.</p>
+                        <a href="#design-process" class="project-link">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sushi-details" class="project-details">
+                <h3>Sushi App Case Study</h3>
+                <p>Detailed information about your sushi ordering app project...</p>
+                <a href="#projects" class="back-link">← Back to Projects</a>
+            </section>
+            
+            <section id="design-process" class="project-details">
+                <h3>My Design Methodology</h3>
+                <p>Detailed explanation of your design process...</p>
+                <a href="#projects" class="back-link">← Back to Projects</a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts al final del body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <script>
+        // Efecto de escritura
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "Hi! I'm Lucía and Welcome to my creative world of UX design, where every detail shapes a better experience.";
+            const hero = document.getElementById('hero');
+            let currentText = "";
+            let currentIdx = 0;
+
+            const tmId = setInterval(function() {
+                currentText += text.charAt(currentIdx++);
+                hero.textContent = currentText;
+
+                if (currentIdx >= text.length) {
+                    clearInterval(tmId);
+                }
+            }, 80);
+
+            // Configuración de Vanta.js segura
+            if(typeof VANTA !== 'undefined') {
+                VANTA.NET({
+                    el: "#vanta-background",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color: 0x8a2be2,
+                    backgroundColor: 0x121212,
+                    points: 12.00,
+                    maxDistance: 22.00,
+                    spacing: 18.00
+                });
+            }
+            
+            // Manejo de navegación interna
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        // Ocultar todos los detalles primero
+                        document.querySelectorAll('.project-details').forEach(detail => {
+                            detail.style.display = 'none';
+                        });
+                        
+                        // Mostrar el elemento objetivo si es un detalle
+                        if(targetElement.classList.contains('project-details')) {
+                            targetElement.style.display = 'block';
+                        }
+                        
+                        // Scroll suave
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
