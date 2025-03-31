@@ -233,3 +233,34 @@ body {
         font-size: 20px;
     }
 }
+/* NUEVOS ESTILOS PARA EL CASO DE ESTUDIO - AGREGAR AL FINAL */
+
+.case-study-content {
+    margin-top: 20px;
+}
+
+.case-study-content h4 {
+    color: #d9b3ff;
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+}
