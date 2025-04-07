@@ -34,6 +34,14 @@
                 <h2>My UX Projects</h2>
                 
                 <div class="projects-grid">
+                    <!-- Proyecto MediAgenda -->
+                    <div class="project-card">
+                        <img src="img/mediagenda-logo.png" alt="MediAgenda">
+                        <h3>MediAgenda</h3>
+                        <p>Plataforma web para agendar citas médicas de forma intuitiva y sencilla en Uruguay.</p>
+                        <a href="#mediagenda-details" class="project-link">Ver Caso de Estudio</a>
+                    </div>
+                    
                     <!-- Proyecto Sushi Web  -->
                     <div class="project-card">
                         <img src="img/logo sushi bar.png" alt="Sushi App">
@@ -52,7 +60,66 @@
                 </div>
             </section>
             
-            <!-- Nueva sección de detalles del sushi - Versión simplificada -->
+            <!-- Sección de detalles de MediAgenda -->
+            <section id="mediagenda-details" class="project-details">
+                <h3>MediAgenda - Plataforma de Agendamiento Médico</h3>
+                <div class="case-study-content">
+                    <h4>Visión General del Proyecto</h4>
+                    <p>MediAgenda es una plataforma web diseñada para ayudar a las personas en Uruguay a encontrar y agendar citas médicas de forma intuitiva y sencilla. El objetivo principal es eliminar las barreras tradicionales en el proceso de agendamiento médico, ofreciendo una experiencia digital fluida y accesible para todos los usuarios.</p>
+                    
+                    <h4>Desafío</h4>
+                    <p>El sistema tradicional de agendamiento médico en Uruguay presenta varios problemas: largas esperas telefónicas, horarios limitados para agendar y falta de información centralizada sobre disponibilidad de médicos. MediAgenda busca resolver estos problemas mediante una plataforma digital que centralice toda la información y simplifique el proceso.</p>
+                    
+                    <h4>Solución</h4>
+                    <p>Desarrollamos una plataforma web responsive que permite a los usuarios:</p>
+                    <ul class="feature-list">
+                        <li>Buscar médicos por especialidad, ubicación o mutualista</li>
+                        <li>Ver perfiles detallados de los médicos con su formación y experiencia</li>
+                        <li>Consultar disponibilidad en tiempo real</li>
+                        <li>Agendar citas médicas con pocos clics</li>
+                        <li>Gestionar todas sus citas desde un perfil personal</li>
+                    </ul>
+                    
+                    <h4>Proceso de Diseño</h4>
+                    <p>El proyecto siguió un proceso de diseño centrado en el usuario:</p>
+                    <ol class="process-list">
+                        <li>Investigación de usuarios y análisis de competencia</li>
+                        <li>Definición de user personas y journey maps</li>
+                        <li>Wireframing y arquitectura de información</li>
+                        <li>Diseño de prototipos en Figma</li>
+                        <li>Pruebas de usabilidad e iteraciones</li>
+                        <li>Implementación final con HTML, CSS y JavaScript</li>
+                    </ol>
+                    
+                    <h4>Prototipos y Resultado Final</h4>
+                    <div class="cascade-gallery">
+                        <div class="cascade-item">
+                            <img src="img/mediagenda.png" alt="Wireframes de MediAgenda">
+                            <p class="caption">Wireframes iniciales</p>
+                        </div>
+                        <div class="cascade-item">
+                            <img src="img/mediagenda-prototype.png" alt="Prototipo de MediAgenda en Figma">
+                            <p class="caption">Prototipo de alta fidelidad en Figma</p>
+                        </div>
+                        <div class="cascade-item">
+                            <img src="img/mediagenda-final.png" alt="Implementación final de MediAgenda">
+                            <p class="caption">Implementación final</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Resultados y Aprendizajes</h4>
+                    <p>La plataforma MediAgenda logra simplificar significativamente el proceso de agendamiento médico, reduciendo el tiempo necesario para encontrar y agendar una cita. Las pruebas con usuarios mostraron una alta satisfacción y una tasa de éxito del 95% en la completitud de tareas.</p>
+                    
+                    <h4>Enlaces del Proyecto</h4>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/file/XXXXX/MediAgenda" target="_blank" class="project-link">Ver Prototipo en Figma</a>
+                        <a href="https://mediagenda-demo.vercel.app" target="_blank" class="project-link">Visitar Sitio Web</a>
+                    </div>
+                </div>
+                <a href="#projects" class="back-link">← Volver a Proyectos</a>
+            </section>
+            
+            <!-- Nueva sección de detalles del sushi -->
             <section id="sushi-details" class="project-details">
                 <h3>Sushi App Case Study</h3>
                 <div class="case-study-content">
@@ -88,7 +155,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
-        // Tu código JavaScript original aquí
+        // JavaScript 
         document.addEventListener('DOMContentLoaded', function() {
             const text = "Hi! I'm Lucía and Welcome to my creative world of UX design, where every detail shapes a better experience.";
             const hero = document.getElementById('hero');
