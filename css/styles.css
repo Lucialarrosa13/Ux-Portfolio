@@ -264,3 +264,76 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Estilos para MediAgenda */
+.feature-list, .process-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.feature-list li, .process-list li {
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+.cascade-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.cascade-item {
+    position: relative;
+    transition: transform 0.3s ease;
+    margin-left: calc(var(--index, 0) * 40px);
+    --index: 0;
+}
+
+.cascade-item:nth-child(2) {
+    --index: 1;
+}
+
+.cascade-item:nth-child(3) {
+    --index: 2;
+}
+
+.cascade-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cascade-item:hover {
+    transform: translateY(-5px);
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #d9b3ff;
+    text-align: center;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .cascade-item {
+        margin-left: calc(var(--index, 0) * 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .cascade-item {
+        margin-left: 0;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+}
