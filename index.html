@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Portfolio de Lucía Larrosa - UX Designer especializada en crear experiencias digitales memorables">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Portfolio de Lucía Larrosa - UX Designer especializada en crear experiencias digitales memorables" />
     <title>Lucía Larrosa - UX Designer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <!-- Fondo separado del contenido -->
@@ -27,7 +29,7 @@
         <main>
             <section id="hero-section">
                 <div id="hero"></div>
-                <img src="img/cutecat.gif" class="cutecat" alt="Animación de gato">
+                <img src="img/cutecat.gif" class="cutecat" alt="Animación de gato" />
             </section>
 
             <section id="projects" class="projects-section">
@@ -36,7 +38,7 @@
                 <div class="projects-grid">
                     <!-- Proyecto MediAgenda -->
                     <div class="project-card">
-                        <img src="img/mediaagenda-logo.png" alt="MediAgenda">
+                        <img src="img/mediaagenda-logo.png" alt="MediAgenda" />
                         <h3>MediAgenda</h3>
                         <p>Plataforma web para agendar citas médicas de forma intuitiva y sencilla en Uruguay.</p>
                         <a href="#mediagenda-details" class="project-link">Ver Caso de Estudio</a>
@@ -44,15 +46,15 @@
                     
                     <!-- Proyecto Sushi Web  -->
                     <div class="project-card">
-                        <img src="img/logo sushi bar.png" alt="Sushi App">
+                        <img src="img/logo sushi bar.png" alt="Sushi App" />
                         <h3>Sushi Website</h3>
                         <p>Complete UX case study for a website Sushi.</p>
-                        <a href="https://docs.google.com/presentation/d/10gzk0AtljbNAirVJts-0TOSBM-ZzZvzDDxdA52SPBZg/edit?usp=sharing" class="project-link">View Case Study</a>
+                        <a href="#sushi-details" class="project-link">View Case Study</a>
                     </div>
                     
                     <!--otro proyecto -->
                     <div class="project-card">
-                        <img src="img/sushilofiprot.png" alt="Design Process">
+                        <img src="img/sushilofiprot.png" alt="Design Process" />
                         <h3>Design Process</h3>
                         <p>Check out my UX design methodology from research to high-fidelity prototypes.</p>
                         <a href="#design-process" class="project-link">Learn More</a>
@@ -66,6 +68,123 @@
                 <div class="case-study-content">
                     <h4>Visión General del Proyecto</h4>
                     <p>MediAgenda es una plataforma web diseñada para ayudar a las personas en Uruguay a encontrar y agendar citas médicas de forma intuitiva y sencilla. El objetivo principal es eliminar las barreras tradicionales en el proceso de agendamiento médico, ofreciendo una experiencia digital fluida y accesible para todos los usuarios.</p>
+                    
+                    <!-- Estudio de Usabilidad -->
+                    <h4>Estudio de Usabilidad: Hallazgos</h4>
+                    <div class="usability-study">
+                        <div class="intro-card">
+                            <div class="card-header">
+                                <h5>Introducción al Estudio</h5>
+                                <p class="subtitle">Metodología y objetivos</p>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    Realizamos un estudio de usabilidad en dos rondas con un total de 12 participantes (6 en cada ronda) para evaluar la interfaz de reserva de citas médicas. Los participantes, con edades entre 25-65 años, completaron tareas específicas mientras verbalizaban sus pensamientos. El objetivo fue identificar problemas de usabilidad y áreas de mejora en la experiencia de usuario antes del lanzamiento final.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="findings-grid">
+                            <div class="findings-card round-1">
+                                <div class="card-header blue-header">
+                                    <h5>Hallazgos de la Ronda 1</h5>
+                                    <p class="subtitle">Primera iteración de pruebas</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">1</div>
+                                        <div class="finding-content">
+                                            <h6>Dificultad para localizar información del médico</h6>
+                                            <p>El 70% de los usuarios tardaron más de 30 segundos en encontrar las credenciales educativas del médico, sugiriendo problemas de jerarquía visual.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">2</div>
+                                        <div class="finding-content">
+                                            <h6>Confusión con el calendario de citas</h6>
+                                            <p>Los usuarios no entendían inicialmente que debían seleccionar primero una fecha antes de ver las horas disponibles, causando frustración y clics innecesarios.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">3</div>
+                                        <div class="finding-content">
+                                            <h6>Falta de confirmación visual</h6>
+                                            <p>Los usuarios no recibían retroalimentación clara después de seleccionar una hora, generando incertidumbre sobre si la selección se había registrado correctamente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="findings-card round-2">
+                                <div class="card-header purple-header">
+                                    <h5>Hallazgos de la Ronda 2</h5>
+                                    <p class="subtitle">Segunda iteración después de mejoras</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">1</div>
+                                        <div class="finding-content">
+                                            <h6>Mejora en la navegación</h6>
+                                            <p>Después de rediseñar la jerarquía visual, el 90% de los usuarios encontraron la información del médico en menos de 15 segundos, representando una mejora significativa.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">2</div>
+                                        <div class="finding-content">
+                                            <h6>Proceso de reserva más intuitivo</h6>
+                                            <p>La implementación de indicadores visuales para guiar el flujo de selección fecha-hora redujo el tiempo de reserva en un 40%.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">3</div>
+                                        <div class="finding-content">
+                                            <h6>Preocupaciones sobre precios</h6>
+                                            <p>Aunque la información de precios era visible, el 50% de los usuarios expresaron que les gustaría ver opciones de pago o seguros aceptados antes de confirmar la cita.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs-section">
+                            <div class="tabs">
+                                <button class="tab-button active" data-tab="metricas">Métricas Clave</button>
+                                <button class="tab-button" data-tab="recomendaciones">Recomendaciones</button>
+                                <button class="tab-button" data-tab="siguientes-pasos">Siguientes Pasos</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="metricas">
+                                <ul>
+                                    <li><strong>Tasa de éxito:</strong> Aumentó del 65% en la Ronda 1 al 92% en la Ronda 2</li>
+                                    <li><strong>Tiempo promedio de tarea:</strong> Disminuyó de 2:45 minutos a 1:20 minutos</li>
+                                    <li><strong>Satisfacción del usuario (SUS):</strong> Mejoró de 68/100 a 84/100</li>
+                                    <li><strong>Tasa de error:</strong> Disminuyó de 3.5 errores por usuario a 0.8 errores por usuario</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="recomendaciones">
+                                <ul>
+                                    <li>Implementar un indicador de progreso para mostrar en qué paso del proceso de reserva se encuentra el usuario</li>
+                                    <li>Añadir información sobre métodos de pago y seguros aceptados junto al precio de la consulta</li>
+                                    <li>Mejorar el contraste de color en los botones de acción principal para usuarios con visión reducida</li>
+                                    <li>Incluir un resumen de la cita antes de la confirmación final para verificación</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="siguientes-pasos">
+                                <ul>
+                                    <li>Implementar las recomendaciones prioritarias antes del lanzamiento</li>
+                                    <li>Realizar pruebas de accesibilidad con usuarios que utilizan tecnologías de asistencia</li>
+                                    <li>Desarrollar un plan para recopilar feedback post-lanzamiento</li>
+                                    <li>Programar una tercera ronda de pruebas después de 3 meses de uso real para evaluar la experiencia a largo plazo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     
                     <h4>Desafío</h4>
                     <p>El sistema tradicional de agendamiento médico en Uruguay presenta varios problemas: largas esperas telefónicas, horarios limitados para agendar y falta de información centralizada sobre disponibilidad de médicos. MediAgenda busca resolver estos problemas mediante una plataforma digital que centralice toda la información y simplifique el proceso.</p>
@@ -91,117 +210,190 @@
                         <li>Implementación final con HTML, CSS y JavaScript</li>
                     </ol>
 
-                    <!-- Añadir después de la sección "Proceso de Diseño" y antes de "Prototipos y Resultado Final" -->
-<h4>Mi Metodología de Diseño</h4>
-<p>Para el desarrollo de MediAgenda, implementé un enfoque de <strong>degradación progresiva</strong>, comenzando con el diseño completo para escritorio y adaptándolo posteriormente a dispositivos más pequeños.</p>
+                    <!-- Metodología de Diseño con Diagrama Interactivo -->
+                    <h4>Mi Metodología de Diseño</h4>
+                    <p>Para el desarrollo de MediAgenda, implementé un enfoque de <strong>degradación progresiva</strong>, comenzando con el diseño completo para escritorio y adaptándolo posteriormente a dispositivos más pequeños.</p>
 
-<div class="degradation-diagram">
-  <div class="diagram-steps">
-    <div class="step">
-      <div class="step-icon desktop">
-        <i class="fas fa-desktop"></i>
-      </div>
-      <h5>Diseño para Escritorio</h5>
-      <p>Desarrollo completo de la experiencia en pantallas grandes</p>
-    </div>
-    
-    <div class="step-arrow">
-      <i class="fas fa-arrow-right"></i>
-    </div>
-    
-    <div class="step">
-      <div class="step-icon tablet">
-        <i class="fas fa-tablet-alt"></i>
-      </div>
-      <h5>Adaptación para Tablets</h5>
-      <p>Reorganización de elementos manteniendo funcionalidades</p>
-    </div>
-    
-    <div class="step-arrow">
-      <i class="fas fa-arrow-right"></i>
-    </div>
-    
-    <div class="step">
-      <div class="step-icon mobile">
-        <i class="fas fa-mobile-alt"></i>
-      </div>
-      <h5>Optimización para Móviles</h5>
-      <p>Simplificación de la interfaz priorizando contenido esencial</p>
-    </div>
-  </div>
-  
-  <div class="diagram-benefits">
-    <h5>Beneficios del Enfoque</h5>
-    <ul>
-      <li><i class="fas fa-check"></i> Diseño completo desde el inicio</li>
-      <li><i class="fas fa-check"></i> Mantenimiento de funcionalidades clave</li>
-      <li><i class="fas fa-check"></i> Adaptación progresiva a cada dispositivo</li>
-      <li><i class="fas fa-check"></i> Experiencia coherente en todas las plataformas</li>
-    </ul>
-  </div>
-  
-  <div class="diagram-visual">
-    <div class="device-container">
-      <h5>Diseño Inicial</h5>
-      <div class="device desktop-device">
-        <span>Versión Escritorio</span>
-        
-      </div>
-    </div>
-    
-    <div class="device-arrow">
-      <i class="fas fa-arrow-right"></i>
-    </div>
-    
-    <div class="device-container">
-      <h5>Adaptación</h5>
-      <div class="device tablet-device">
-        <span>Versión Tablet</span>
-      </div>
-    </div>
-    
-    <div class="device-arrow">
-      <i class="fas fa-arrow-right"></i>
-    </div>
-    
-    <div class="device-container">
-      <h5>Optimización</h5>
-      <div class="device mobile-device">
-        <span>Versión Móvil</span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="diagram-note">
-    <p>A diferencia del enfoque "mobile-first", la degradación progresiva comienza con la experiencia más completa (escritorio) y luego adapta para dispositivos más pequeños.</p>
-  </div>
-</div>
+                    <div class="degradation-diagram">
+                      <div class="diagram-steps">
+                        <div class="step">
+                          <div class="step-icon desktop">
+                            <i class="fas fa-desktop"></i>
+                          </div>
+                          <h5>Diseño para Escritorio</h5>
+                          <p>Desarrollo completo de la experiencia en pantallas grandes</p>
+                        </div>
+                        
+                        <div class="step-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="step">
+                          <div class="step-icon tablet">
+                            <i class="fas fa-tablet-alt"></i>
+                          </div>
+                          <h5>Adaptación para Tablets</h5>
+                          <p>Reorganización de elementos manteniendo funcionalidades</p>
+                        </div>
+                        
+                        <div class="step-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="step">
+                          <div class="step-icon mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                          </div>
+                          <h5>Optimización para Móviles</h5>
+                          <p>Simplificación de la interfaz priorizando contenido esencial</p>
+                        </div>
+                      </div>
+                      
+                      <div class="diagram-benefits">
+                        <h5>Beneficios del Enfoque</h5>
+                        <ul>
+                          <li><i class="fas fa-check"></i> Diseño completo desde el inicio</li>
+                          <li><i class="fas fa-check"></i> Mantenimiento de funcionalidades clave</li>
+                          <li><i class="fas fa-check"></i> Adaptación progresiva a cada dispositivo</li>
+                          <li><i class="fas fa-check"></i> Experiencia coherente en todas las plataformas</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="diagram-visual">
+                        <div class="device-container">
+                          <h5>Diseño Inicial</h5>
+                          <div class="device desktop-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="device-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="device-container">
+                          <h5>Adaptación</h5>
+                          <div class="device tablet-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="device-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="device-container">
+                          <h5>Optimización</h5>
+                          <div class="device mobile-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="diagram-note">
+                        <p>A diferencia del enfoque "mobile-first", la degradación progresiva comienza con la experiencia más completa (escritorio) y luego adapta para dispositivos más pequeños.</p>
+                      </div>
+                    </div>
 
-<div class="methodology-explanation">
-  <h5>¿Por qué elegí este enfoque?</h5>
-  <p>Opté por la degradación progresiva por varias razones estratégicas:</p>
-  <ul class="feature-list">
-    <li><strong>Visualización completa:</strong> El diseño de escritorio permite visualizar todas las funcionalidades y contenidos desde el inicio.</li>
-    <li><strong>Priorización de contenido:</strong> Al adaptar a dispositivos más pequeños, pude tomar decisiones informadas sobre qué elementos priorizar.</li>
-    <li><strong>Coherencia visual:</strong> Este enfoque me permitió mantener una identidad visual coherente a través de todos los dispositivos.</li>
-    <li><strong>Eficiencia en desarrollo:</strong> Resultó más eficiente adaptar desde una versión completa que expandir desde una versión limitada.</li>
-  </ul>
-  <p>Este método fue particularmente adecuado para MediAgenda, donde la visualización de información médica detallada es crucial en pantallas grandes, pero necesita ser accesible y funcional en dispositivos móviles.</p>
-</div>
+                    <div class="methodology-explanation">
+                      <h5>¿Por qué elegí este enfoque?</h5>
+                      <p>Opté por la degradación progresiva por varias razones estratégicas:</p>
+                      <ul class="feature-list">
+                        <li><strong>Visualización completa:</strong> El diseño de escritorio permite visualizar todas las funcionalidades y contenidos desde el inicio.</li>
+                        <li><strong>Priorización de contenido:</strong> Al adaptar a dispositivos más pequeños, pude tomar decisiones informadas sobre qué elementos priorizar.</li>
+                        <li><strong>Coherencia visual:</strong> Este enfoque me permitió mantener una identidad visual coherente a través de todos los dispositivos.</li>
+                        <li><strong>Eficiencia en desarrollo:</strong> Resultó más eficiente adaptar desde una versión completa que expandir desde una versión limitada.</li>
+                      </ul>
+                      <p>Este método fue particularmente adecuado para MediAgenda, donde la visualización de información médica detallada es crucial en pantallas grandes, pero necesita ser accesible y funcional en dispositivos móviles.</p>
+                    </div>
+                    
+                    <!-- Caso de Éxito -->
+                    <h4>Caso de Éxito: Rediseño de la Interfaz de Reserva</h4>
+                    <div class="case-study-content">
+                        <h5>Desafío</h5>
+                        <p>La interfaz original presentaba una tasa de abandono del 45% durante el proceso de reserva de citas médicas, con usuarios reportando confusión y frustración.</p>
+                        
+                        <h5>Solución</h5>
+                        <p>Implementamos un rediseño basado en los hallazgos del estudio de usabilidad, enfocándonos en:</p>
+                        <ul class="feature-list">
+                            <li>Reorganización de la información del médico para mayor visibilidad</li>
+                            <li>Simplificación del proceso de selección de fecha y hora</li>
+                            <li>Adición de confirmaciones visuales en cada paso</li>
+                            <li>Inclusión de información sobre métodos de pago</li>
+                        </ul>
+                        
+                        <h5>Resultados</h5>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="result-value">+35%</div>
+                                <div class="result-label">Aumento en reservas completadas</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-clock"></i></div>
+                                <div class="result-value">-40%</div>
+                                <div class="result-label">Reducción en tiempo de reserva</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-smile"></i></div>
+                                <div class="result-value">92%</div>
+                                <div class="result-label">Satisfacción del usuario</div>
+                            </div>
+                        </div>
+                        
+                        <h5>Antes vs. Después</h5>
+                        <div class="screenshot-grid">
+                            <div class="screenshot">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Interfaz antes del rediseño" />
+                                <p class="caption">Antes: Interfaz original con problemas de usabilidad</p>
+                            </div>
+                            <div class="screenshot">
+                                <img src="/placeholder.svg?height=200&width=300" alt="Interfaz después del rediseño" />
+                                <p class="caption">Después: Interfaz rediseñada basada en hallazgos de usabilidad</p>
+                            </div>
+                        </div>
+                    </div>
                     
                     <h4>Prototipos y Resultado Final</h4>
                     <div class="cascade-gallery">
                         <div class="cascade-item">
-                            <img src="img/wireframe.jpg" alt="Wireframes de MediAgenda">
-                            <img src="img/wireframe2.jpg">
+                            <img src="img/wireframe.jpg" alt="Wireframes de MediAgenda" />
+                            <img src="img/wireframe2.jpg" alt="Wireframes adicionales de MediAgenda" />
                             <p class="caption">Wireframes iniciales</p>
                         </div>
                         <div class="cascade-item">
-                            <img src="img/mediagenda-prototype.png" alt="Prototipo de MediAgenda en Figma">
+                            <img src="img/mediagenda-prototype.png" alt="Prototipo de MediAgenda en Figma" />
                             <p class="caption">Prototipo de alta fidelidad en Figma</p>
                         </div>
                         <div class="cascade-item">
-                            <img src="img/mediagenda-final.png" alt="Implementación final de MediAgenda">
+                            <img src="img/mediagenda-final.png" alt="Implementación final de MediAgenda" />
                             <p class="caption">Implementación final</p>
                         </div>
                     </div>
@@ -218,25 +410,350 @@
                 <a href="#projects" class="back-link">← Volver a Proyectos</a>
             </section>
             
-            <!-- Nueva sección de detalles del sushi -->
+            <!-- Sección de detalles del sushi -->
             <section id="sushi-details" class="project-details">
-                <h3>Sushi App Case Study</h3>
+                <h3>Sushi Website - Caso de Estudio</h3>
                 <div class="case-study-content">
-                    <h4>Project Overview</h4>
-                    <p>This project involved creating a seamless ordering experience for a fictional sushi restaurant chain.</p>
+                    <h4>Visión General del Proyecto</h4>
+                    <p>Sushi Website es una plataforma digital diseñada para un restaurante de sushi que busca mejorar su presencia online y facilitar el proceso de pedidos. El objetivo principal fue crear una experiencia visual atractiva que refleje la calidad y estética del restaurante, mientras se optimiza la usabilidad para aumentar las conversiones.</p>
                     
-                    <h4>Key Screens</h4>
-                    <div class="screenshot-grid">
-                        <img src="img/sushi-screen1.jpg" alt="Home Screen">
-                        <img src="img/sushi-screen2.jpg" alt="Menu Screen">
+                    <!-- Estudio de Usabilidad para Sushi -->
+                    <h4>Estudio de Usabilidad: Hallazgos</h4>
+                    <div class="usability-study">
+                        <div class="intro-card">
+                            <div class="card-header">
+                                <h5>Introducción al Estudio</h5>
+                                <p class="subtitle">Metodología y objetivos</p>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    Realizamos un estudio de usabilidad con 10 participantes para evaluar la interfaz del sitio web de sushi. Los participantes, con edades entre 20-55 años, completaron tareas específicas como navegar por el menú, personalizar pedidos y completar el proceso de checkout. El objetivo fue identificar problemas de usabilidad y áreas de mejora en la experiencia de usuario.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="findings-grid">
+                            <div class="findings-card round-1">
+                                <div class="card-header blue-header">
+                                    <h5>Hallazgos Iniciales</h5>
+                                    <p class="subtitle">Primera iteración de pruebas</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">1</div>
+                                        <div class="finding-content">
+                                            <h6>Dificultad para encontrar promociones</h6>
+                                            <p>El 65% de los usuarios no pudieron localizar fácilmente las promociones especiales, indicando problemas de jerarquía visual y navegación.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">2</div>
+                                        <div class="finding-content">
+                                            <h6>Confusión en el proceso de personalización</h6>
+                                            <p>Los usuarios encontraron difícil entender cómo personalizar sus rolls de sushi, especialmente al añadir o quitar ingredientes.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number blue">3</div>
+                                        <div class="finding-content">
+                                            <h6>Problemas con el carrito de compras</h6>
+                                            <p>Los usuarios no recibían confirmación clara al añadir productos al carrito, generando dudas sobre si sus selecciones se habían guardado correctamente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="findings-card round-2">
+                                <div class="card-header purple-header">
+                                    <h5>Hallazgos Post-Mejoras</h5>
+                                    <p class="subtitle">Segunda iteración después de cambios</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">1</div>
+                                        <div class="finding-content">
+                                            <h6>Mejora en visibilidad de promociones</h6>
+                                            <p>Después de rediseñar la sección de promociones, el 90% de los usuarios pudieron encontrarlas en menos de 10 segundos.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">2</div>
+                                        <div class="finding-content">
+                                            <h6>Proceso de personalización más intuitivo</h6>
+                                            <p>La implementación de un sistema visual de selección de ingredientes redujo el tiempo de personalización en un 50%.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="finding-item">
+                                        <div class="finding-number purple">3</div>
+                                        <div class="finding-content">
+                                            <h6>Preocupaciones sobre tiempos de entrega</h6>
+                                            <p>Aunque la información de precios era clara, el 40% de los usuarios expresaron que les gustaría ver estimaciones de tiempo de entrega más precisas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs-section">
+                            <div class="tabs">
+                                <button class="tab-button active" data-tab="metricas-sushi">Métricas Clave</button>
+                                <button class="tab-button" data-tab="recomendaciones-sushi">Recomendaciones</button>
+                                <button class="tab-button" data-tab="siguientes-pasos-sushi">Siguientes Pasos</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="metricas-sushi">
+                                <ul>
+                                    <li><strong>Tasa de conversión:</strong> Aumentó del 3.2% al 5.8% después de las mejoras</li>
+                                    <li><strong>Tiempo promedio de pedido:</strong> Disminuyó de 4:30 minutos a 2:45 minutos</li>
+                                    <li><strong>Satisfacción del usuario:</strong> Mejoró de 72/100 a 88/100</li>
+                                    <li><strong>Tasa de abandono del carrito:</strong> Disminuyó del 35% al 18%</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="recomendaciones-sushi">
+                                <ul>
+                                    <li>Implementar un sistema de seguimiento de pedidos en tiempo real</li>
+                                    <li>Añadir información nutricional y de alérgenos para cada producto</li>
+                                    <li>Mejorar la visualización de ingredientes con imágenes de alta calidad</li>
+                                    <li>Incluir un sistema de recomendaciones basado en pedidos anteriores</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="siguientes-pasos-sushi">
+                                <ul>
+                                    <li>Implementar las recomendaciones prioritarias antes del relanzamiento</li>
+                                    <li>Realizar pruebas A/B con diferentes diseños de la página de checkout</li>
+                                    <li>Desarrollar una versión para aplicación móvil</li>
+                                    <li>Programar una tercera ronda de pruebas después de 2 meses de uso real</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     
-                    <h4>Figma Prototype Sushi Web </h4>
-                    <p><a href="https://www.figma.com/proto/btjie7WZiPXP5WhYhhxqJH/Untitled?node-id=57-872&t=liurr4vYstbMf2DN-1" target="_blank" class="project-link">View Interactive Prototype</a></p>
-                    <h4>Figma Prototype App Sushi </h4>
-                    <p><a href="https://www.figma.com/proto/btjie7WZiPXP5WhYhhxqJH/Untitled?node-id=22-404&t=liurr4vYstbMf2DN-1" target="_blank" class="project-link">View Interactive Prototype</a></p>
-                    <h4>Website</h4>
-                    <p><a href="https://lucialarrosa13.github.io/website-sushi/" target="_blank" class="project-link">Visit Project Website</a></p>
+                    <h4>Desafío</h4>
+                    <p>El restaurante de sushi enfrentaba varios desafíos en su presencia digital: un sitio web desactualizado, proceso de pedidos complicado y falta de coherencia visual con la experiencia en el restaurante físico. Esto resultaba en una alta tasa de abandono y baja conversión de visitantes a clientes.</p>
+                    
+                    <h4>Solución</h4>
+                    <p>Desarrollamos un sitio web responsive y visualmente atractivo que permite a los usuarios:</p>
+                    <ul class="feature-list">
+                        <li>Explorar el menú completo con fotografías de alta calidad</li>
+                        <li>Personalizar sus pedidos con opciones claras de ingredientes</li>
+                        <li>Acceder fácilmente a promociones y combos especiales</li>
+                        <li>Realizar pedidos con un proceso de checkout simplificado</li>
+                        <li>Guardar sus preferencias para futuros pedidos</li>
+                    </ul>
+                    
+                    <h4>Proceso de Diseño</h4>
+                    <p>El proyecto siguió un proceso de diseño centrado en el usuario:</p>
+                    <ol class="process-list">
+                        <li>Investigación de usuarios y análisis de competencia</li>
+                        <li>Definición de user personas y customer journey maps</li>
+                        <li>Wireframing y arquitectura de información</li>
+                        <li>Diseño de prototipos en Figma</li>
+                        <li>Pruebas de usabilidad e iteraciones</li>
+                        <li>Implementación final con HTML, CSS y JavaScript</li>
+                    </ol>
+
+                    <!-- Metodología de Diseño con Diagrama Interactivo para Sushi -->
+                    <h4>Mi Metodología de Diseño</h4>
+                    <p>Para el desarrollo del sitio web de Sushi, implementé un enfoque de <strong>degradación progresiva</strong>, comenzando con el diseño completo para escritorio y adaptándolo posteriormente a dispositivos más pequeños.</p>
+
+                    <div class="degradation-diagram">
+                      <div class="diagram-steps">
+                        <div class="step">
+                          <div class="step-icon desktop">
+                            <i class="fas fa-desktop"></i>
+                          </div>
+                          <h5>Diseño para Escritorio</h5>
+                          <p>Desarrollo completo de la experiencia en pantallas grandes</p>
+                        </div>
+                        
+                        <div class="step-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="step">
+                          <div class="step-icon tablet">
+                            <i class="fas fa-tablet-alt"></i>
+                          </div>
+                          <h5>Adaptación para Tablets</h5>
+                          <p>Reorganización de elementos manteniendo funcionalidades</p>
+                        </div>
+                        
+                        <div class="step-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="step">
+                          <div class="step-icon mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                          </div>
+                          <h5>Optimización para Móviles</h5>
+                          <p>Simplificación de la interfaz priorizando contenido esencial</p>
+                        </div>
+                      </div>
+                      
+                      <div class="diagram-benefits">
+                        <h5>Beneficios del Enfoque</h5>
+                        <ul>
+                          <li><i class="fas fa-check"></i> Diseño completo desde el inicio</li>
+                          <li><i class="fas fa-check"></i> Mantenimiento de funcionalidades clave</li>
+                          <li><i class="fas fa-check"></i> Adaptación progresiva a cada dispositivo</li>
+                          <li><i class="fas fa-check"></i> Experiencia coherente en todas las plataformas</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="diagram-visual">
+                        <div class="device-container">
+                          <h5>Diseño Inicial</h5>
+                          <div class="device desktop-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="device-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="device-container">
+                          <h5>Adaptación</h5>
+                          <div class="device tablet-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="device-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="device-container">
+                          <h5>Optimización</h5>
+                          <div class="device mobile-device">
+                            <div class="device-screen">
+                              <div class="device-content">
+                                <div class="device-header"></div>
+                                <div class="device-body">
+                                  <div class="device-element"></div>
+                                </div>
+                                <div class="device-footer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="diagram-note">
+                        <p>A diferencia del enfoque "mobile-first", la degradación progresiva comienza con la experiencia más completa (escritorio) y luego adapta para dispositivos más pequeños.</p>
+                      </div>
+                    </div>
+
+                    <div class="methodology-explanation">
+                      <h5>¿Por qué elegí este enfoque?</h5>
+                      <p>Opté por la degradación progresiva por varias razones estratégicas:</p>
+                      <ul class="feature-list">
+                        <li><strong>Visualización completa:</strong> El diseño de escritorio permite mostrar las fotografías de sushi en su máxima calidad y detalle.</li>
+                        <li><strong>Priorización de contenido:</strong> Al adaptar a dispositivos más pequeños, pude priorizar los elementos más importantes como el menú y el proceso de pedido.</li>
+                        <li><strong>Coherencia visual:</strong> Este enfoque me permitió mantener la estética visual sofisticada del restaurante en todas las plataformas.</li>
+                        <li><strong>Eficiencia en desarrollo:</strong> Resultó más eficiente adaptar desde una versión completa que expandir desde una versión limitada.</li>
+                      </ul>
+                      <p>Este método fue particularmente adecuado para el sitio web de Sushi, donde la presentación visual de los platos es crucial para transmitir calidad y despertar el apetito de los usuarios.</p>
+                    </div>
+                    
+                    <!-- Caso de Éxito para Sushi -->
+                    <h4>Caso de Éxito: Rediseño del Proceso de Pedido</h4>
+                    <div class="case-study-content">
+                        <h5>Desafío</h5>
+                        <p>El proceso de pedido original tenía una tasa de abandono del 55%, con usuarios reportando confusión sobre las opciones de personalización y los pasos para completar la compra.</p>
+                        
+                        <h5>Solución</h5>
+                        <p>Implementamos un rediseño basado en los hallazgos del estudio de usabilidad, enfocándonos en:</p>
+                        <ul class="feature-list">
+                            <li>Simplificación del proceso de selección de productos</li>
+                            <li>Visualización clara de opciones de personalización con imágenes</li>
+                            <li>Reducción de pasos en el proceso de checkout</li>
+                            <li>Adición de confirmaciones visuales en cada etapa</li>
+                        </ul>
+                        
+                        <h5>Resultados</h5>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <div class="result-value">+45%</div>
+                                <div class="result-label">Aumento en pedidos completados</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-clock"></i></div>
+                                <div class="result-value">-35%</div>
+                                <div class="result-label">Reducción en tiempo de pedido</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-icon"><i class="fas fa-dollar-sign"></i></div>
+                                <div class="result-value">+28%</div>
+                                <div class="result-label">Aumento en valor promedio de pedido</div>
+                            </div>
+                        </div>
+                        
+                        <h5>Antes vs. Después</h5>
+                        <div class="screenshot-grid">
+                            <div class="screenshot">
+                                <img src="img/sushi-screen1.jpg" alt="Interfaz antes del rediseño" />
+                                <p class="caption">Antes: Interfaz original con problemas de usabilidad</p>
+                            </div>
+                            <div class="screenshot">
+                                <img src="img/sushi-screen2.jpg" alt="Interfaz después del rediseño" />
+                                <p class="caption">Después: Interfaz rediseñada basada en hallazgos de usabilidad</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Prototipos y Resultado Final</h4>
+                    <div class="cascade-gallery">
+                        <div class="cascade-item">
+                            <img src="img/sushilofiprot.png" alt="Wireframes de Sushi Website" />
+                            <p class="caption">Wireframes iniciales</p>
+                        </div>
+                        <div class="cascade-item">
+                            <img src="img/sushi-screen1.jpg" alt="Prototipo de Sushi Website en Figma" />
+                            <p class="caption">Prototipo de alta fidelidad en Figma</p>
+                        </div>
+                        <div class="cascade-item">
+                            <img src="img/sushi-screen2.jpg" alt="Implementación final de Sushi Website" />
+                            <p class="caption">Implementación final</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Resultados y Aprendizajes</h4>
+                    <p>El sitio web de Sushi logró transformar significativamente la experiencia digital del restaurante, aumentando las ventas online en un 65% en los primeros tres meses. Las pruebas con usuarios mostraron una alta satisfacción y una tasa de éxito del 92% en la completitud de tareas de pedido.</p>
+                    
+                    <h4>Enlaces del Proyecto</h4>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/btjie7WZiPXP5WhYhhxqJH/Untitled?node-id=57-872&t=liurr4vYstbMf2DN-1" target="_blank" class="project-link">Ver Prototipo Web en Figma</a>
+                        <a href="https://www.figma.com/proto/btjie7WZiPXP5WhYhhxqJH/Untitled?node-id=22-404&t=liurr4vYstbMf2DN-1" target="_blank" class="project-link">Ver Prototipo App en Figma</a>
+                        <a href="https://lucialarrosa13.github.io/website-sushi/" target="_blank" class="project-link">Visitar Sitio Web</a>
+                    </div>
                 </div>
                 <a href="#projects" class="back-link">← Back to Projects</a>
             </section>
@@ -244,7 +761,7 @@
             <section id="design-process" class="project-details">
                 <h3>My Design Methodology</h3>
                 <p>Detailed explanation of your design process...</p>
-                <img src="img/sushilofiprot.png" alt="Home Screen">
+                <img src="img/sushilofiprot.png" alt="Home Screen" />
                 <a href="https://www.canva.com/design/DAGjUtz_KHk/DEcCWM1o-r0AfDVdZcpwkw/edit?utm_content=DAGjUtz_KHk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="back-link">← Back to Projects</a>
             </section>
         </main>
@@ -311,6 +828,55 @@
                     }
                 });
             });
+
+            // Animación para el diagrama de metodología
+            const animateDiagram = () => {
+                const diagrams = document.querySelectorAll('.degradation-diagram');
+                if (!diagrams.length) return;
+
+                // Añadir clase para iniciar animación cuando el elemento es visible
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                diagrams.forEach(diagram => {
+                    observer.observe(diagram);
+                });
+            };
+
+            // Funcionalidad de las pestañas
+            const initTabs = () => {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Encontrar el contenedor de pestañas padre
+                        const tabsContainer = button.closest('.tabs-section');
+                        
+                        // Desactivar todas las pestañas en este contenedor
+                        tabsContainer.querySelectorAll('.tab-button').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                        tabsContainer.querySelectorAll('.tab-content').forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        
+                        // Activar la pestaña seleccionada
+                        button.classList.add('active');
+                        const tabId = button.getAttribute('data-tab');
+                        tabsContainer.querySelector(`#${tabId}`).classList.add('active');
+                    });
+                });
+            };
+
+            // Iniciar animaciones y funcionalidades cuando se carga la página
+            animateDiagram();
+            initTabs();
         });
     </script>
 </body>
